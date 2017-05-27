@@ -1,0 +1,32 @@
+.white{
+  color:white;
+}
+.background {
+  background-image: url(autumn_road.jpg);
+  background-size: cover;
+}
+#_pic{
+  postion:fixed;
+  background-color: black;
+  width:5000px;
+  height:300px;
+  z-index: 3;
+
+}
+#_text{
+  color:tan;
+  position:absolute;
+  top:100px;
+  left:315px;
+  z-index: 2;
+}
+
+#_gif{
+    position:fixed;
+    width:5000px;
+    height: 0;
+    left: 315px;
+    top: 270px;
+
+
+}
