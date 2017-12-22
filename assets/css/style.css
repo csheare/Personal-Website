@@ -28,12 +28,14 @@ body {
   grid-template-areas:
   "hl hl hm hm hr"
   "subhl subhl subhm subhm subhr"
-  "ml mm12 mm1 mm2 mm3"
+  "ml mm12 mm mm mm"
   "sf sf sf sf sf"
   "f f f f f";
 }
 .item-pic{
   grid-area: mm12;
+  justify-self: center;
+  margin:10px;
 }
 .item-pic img{
   margin: auto;
@@ -58,31 +60,40 @@ body {
 .item-nav a:hover{
   color: #5E1F31;
 }
+.about-container{
+  grid-area: mm;
+  display:grid;
+  grid-template-columns: 5% auto 5%;
+  grid-column-gap: 10px;
+  grid-template-areas:
+  "left middle right";
+}
 .item-leftbracket{
-  grid-area: mm1;
+  grid-area: left;
+  align-self: center;
 }
 .item-leftbracket img{
-  margin: 50px auto 50px;
-  max-width:95%;
-  max-height:95%;
+  max-width:200%;
+  max-height:200%;
 }
 .item-about{
+  align-self: center;
   text-align: center;
   font-weight:bold;
-  font-size: 150%;
-  grid-area:mm2;
-  margin: 50px auto 50px !important;
+  font-size: 120%;
+  grid-area:middle;
 }
 .item-about h2,p{
   margin:5px;
+  color:#5E1F31;
 }
 .item-rightbracket{
-  grid-area: mm3;
+  align-self: center;
+  grid-area: right;
 }
 .item-rightbracket img{
-  margin: 50px auto 50px;
-  max-width:95%;
-  max-height:95%;
+  max-width:200%;
+  max-height:200%;
 }
 .item-social{
   grid-area: sf;
