@@ -10,7 +10,7 @@ Colors:
 h1{
   font-family: 'Merriweather', serif;
   color:#5E1F31;
-  text-align:left;
+  text-align:center;
   font-weight:bold;
 }
 body {
@@ -20,25 +20,24 @@ body {
 }
 .container{
   display: grid;
-  justify-content: center;
-  margin: 15px;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 10% 10% 20% 40% 10% 10%;
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
   grid-template-areas:
   "hl hm hr"
-  "subhl subhm subhr"
   "ml mm mr"
   "s1l s1m s1r"
   "s2l s2m s2r"
   "fl fm fr";
+  grid-template-columns: 35% auto 35%;
+  grid-row-gap: 20px;
+
 }
 .item-name{
-  grid-area: hm;
+  width: 70%;
+  height: 70%;
+  align-self: center;
   justify-self: center;
+  grid-area: hm;
 }
-.item-nav{
+/*.item-nav{
   grid-area: subhm;
   overflow: hidden;
   justify-self: center;
@@ -46,27 +45,30 @@ body {
 .item-nav a{
     text-decoration: none;
     color:#BD8B7B;
-    padding: 30px;
+    padding: 20px;
     display:inline;
     font-size: 17px;
 }
 .item-nav a:hover{
   color: #5E1F31;
-}
+}*/
 .item-pic{
-  display: flex;
-  align-items: center;
   grid-area: mm;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;  /* NEW */
+  min-width: 0;
 }
 .item-pic img{
-  display: flex;
-  margin-left: 25%;
-  margin-right: -25%;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 60%;
+  max-height: 60%;
+  overflow: hidden;  /* NEW */
+  min-width: 0;
 }
 .about-container{
+  margin:-15%;
   grid-area: s1m;
   display:grid;
   margin: 5px;
@@ -80,14 +82,13 @@ body {
   align-self: center;
 }
 .item-leftbracket img{
-  max-width:200%;
-  max-height:200%;
+  max-width:100%;
+  max-height:100%;
 }
 .item-about{
   align-self: center;
   text-align: center;
-  font-weight:bold;
-  font-size: 120%;
+  font-size: 100%;
   grid-area:middle;
 }
 .item-about h2,p{
@@ -99,26 +100,33 @@ body {
   grid-area: right;
 }
 .item-rightbracket img{
-  max-width:200%;
-  max-height:200%;
+  max-width:100%;
+  max-height:100%;
 }
 .item-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   grid-area: s2m;
-  margin: 25px 0 25px 0;
-  justify-self: center;
+  margin-left: 20%;
 }
 .item-social img{
-  margin: 10px;
-  height: 75px;
-  width: 75px;
+  display: block;
+  justify-self: center;
+  align-self: center;
+  height: 30%;
+  width: 30%;
 }
 .item-social img:hover {
-  height: 90px;
-  width: 90px;
+  height: 40%;
+  width: 40%;
 }
 .item-footer{
   grid-area: fm;
+  text-align: center;
   color:#BD8B7B;
+  align-self: center;
   justify-self: center;
   font-weight: bolder;
 }
