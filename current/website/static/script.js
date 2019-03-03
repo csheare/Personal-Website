@@ -1,4 +1,4 @@
-var things = [ 'discovery', 'adventure', 'creation', 'rock-climbing','fast running', 'nature','public policy','genetics','hackathons','sustainability','candles','reading','Bob Ross Painting','machine learning', 'National Parks', 'La Croix', 'plants','traveling','poetry','event planning','making a difference']
+var things = [ 'discovery', 'adventure', 'creation', 'rock-climbing','fast running', 'nature','public policy', 'activism','hackathons','sustainability','candles','reading','science','computers','Bob Ross Painting','machine learning', 'National Parks', 'La Croix', 'plants','traveling','poetry','event planning','making a difference']
 
 var count = 0
 var elem = document.getElementById("things-i-like")
