@@ -1,0 +1,22 @@
+figure img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content:center;
+}
+
+.center{
+    text-align:center;   
+}
+
+.remove-all-margin-padding{
+    margin:0 ! important;
+    padding:0 ! important;
+}
+
+.center_both{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

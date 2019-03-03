@@ -3,18 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Courtney Shearer</title>
-    <!-- <link rel = "stylesheet" href = "./styles.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel = "stylesheet" href = "../static/styles.css"> 
   </head>
   <body>
-      <form action="/home">
+
+      <div class="jumbotron">
+          <div class="container">
+              <h1 class="center display-4">Courtney Shearer enjoys <span id="things-i-like">many things</span></h1>
+              <hr class="display-4">
+              <p class="center"><i>"We are all pyromaniacs, we just have different fires" -CS </i></p>
+          </div>
+     </div>
+
+     <div class="container">
+         <div class="row">
+             <div class="col center_both">
+                 <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">
+                     <a href="https://www.linkedin.com/in/courtney-shearer/">Business Side</a>
+                     </button>
+             </div>
+             <div class="col-8">
+                 <figure class="text-center">
+                     <img src="../static/assets/prof.jpeg" class="figure-img img-fluid rounded">
+                     <figcaption class="figure-caption">Me in SF, Summer 2018</figcaption>
+                 </figure>
+             </div>
+             <div class="col center_both">
+                 <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">
+                     <a href ="https://http.cat/">Fun Side</a>
+                     </button>
+             </div>
+         </div>
+     </div>
+     <!-- <form action="/home">
           <input type="submit" value="Go Home" />
-      </form>
-      <form action="/business">
-          <input type="submit" value="Go Business" />
-      </form>
-      <form action="/fun">
-          <input type="submit" value="Go Fun" />
-      </form>
+          </form> -->
   </body>
-  <!-- <script src="./script.js"></script> -->
+  <script src="../static/script.js"></script>
 </html>
