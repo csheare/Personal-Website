@@ -32,3 +32,17 @@ button a:hover{
     border-left:  solid black;
 
 }
+
+/* CSS FOR WELCOME PAGE*/
+
+.hidden {
+    /*display: none;*/
+}
+
+.hello {
+    font-size: 200%;
+    margin-top:10% 0 0 0!important;
+    padding: 0 !important;
+}
+
+
