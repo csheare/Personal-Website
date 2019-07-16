@@ -3,6 +3,7 @@ data
 *.csv
 *.json
 *.pyc
+*.egg-info
 instance/
 
 myenv
