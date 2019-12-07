@@ -16,7 +16,20 @@
               <hr class="display-4">
               <p class="center"><i>"We are all pyromaniacs, we just have different fires" -CS </i></p>
           </div>
-      </div>
+      </div><!-- 
+                 <ul class="entries">
+                 {% for entry in entries %}
+                 <li class="entry"><h2 id="{{ entry.route_id }}">{{ entry.password }}</h2>{{ entry.route|safe }}</li>
+                 
+                 {% else %}
+                 <li><em>No entries yet. Add some!</em></li>
+                 {% endfor %}
+
+                 </ul> -->
+      <form action = "http://localhost:5000/token/auth" method = "POST">
+         <p>Name <input type = "text" name = "Password" /></p>
+         <p><input type = "submit" value = "GO!" /></p>
+      </form>
      <div class="container">
          <div class="row py-5">
              <div class="col py-2">
